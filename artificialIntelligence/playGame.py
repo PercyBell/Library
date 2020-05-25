@@ -1,0 +1,3 @@
+from RPSgame import *
+
+Play()
