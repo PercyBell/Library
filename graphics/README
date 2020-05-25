@@ -1,0 +1,58 @@
+Percy Bell - Final Project
+
+right/left arrow: 	moves camera left or right
+up/down arrow: 		moves camera up or down
+[/]:			changes how close the camera is
+
+esc			closes window
+0 			zeros out view
+z/Z			toggle axes
+n/M			change view mode
+SPACE			moves time forward
+x			moves time back
+
+t			Cycles through plant type (flower, vine, dying plant, bamboo)
+l			Changes leaf type between normal and spikes
+s			Changes stem type
+				- if in flower it changes between one and many stems
+				- if in vine it changes between smooth and jagged
+p			Swaps planters (bowl and terra-cotta)
+f			Changes flower (8 or 5 petals)
+1			Cycles through light modes (day, night, none)
+x			Swaps between auto and manual time
+				- on auto time the idle function moves time automatically
+				- in manual time is controlled by user
+SPACE			Moves time (in manual mode only)
+
+
+Specific Things to look at:
+	- Swapping between all the plant types and options
+	- I really like my dying plant function (press t twice to see)
+		- I think it changes dynamically very well both colors and models
+	- The vine function is cool as well 
+	- How the flower opens and closes
+	- The function that creates the stems/pots/bamboo and vine
+		- circleT() connects two circles from input
+		- complexCircle takes a array of circle coordinates and textures and calls CircleT() to connect.
+		- Its one function but I really like how it works because it is very versatile.
+	- I made all the textures myself specifically so that they would fit each item an look correct.
+	- The night mode really highlight everything.
+		- Makes lighting very obvious. 
+		- I like how I did the normal vectors on the leaves.
+			- There is only one normal vector for the leaf and 
+			- it is only a 2d surface so both sides light up at the right angle
+			- This makes it look more realistically like a leaf as they are semi transparent
+	- Notice how the leaves stay in the same place on the stem when it grows (This was very frustrating some times)
+	- I did a lot of stuff with transformation matrices to get the circles right.
+
+
+
+Why I should get and A:
+	- I think this project really demonstrates that I understand the material. The models change over time depending on different parameters specific to the model. (the flower opening up or the dying leaves wilting). Some textures change as well. (the colors of the dying leaves and the flowers both are done in different ways(for the dying leaves the underlying color changes and for the flower the texture is long and what is displayed on the petal moves across it over time)).
+		- I spent a lot of time on the models to make them look interesting
+		- Each model builds up from other models (the circle function which makes the base of many plants combined with the leaves). Each model looks unique.
+		- The textures really fit the models.
+	- It looks really nice! I am satisfied with the way it turned out stylistically. It looks kinda cartoony but still really nice. 
+	- I can see improvement over time in the models. The first one I made is the flower which looks ok. The the bamboo which looks a little better, than the vine which is cool and then the dying bush which I think looks great.
+	- Basically, I put a lot of work into making the models and textures and getting everything just right and Im really happy with how it turned out.
+	
